@@ -43,13 +43,18 @@
   {
     "context": "Editor",
     "bindings": {
-      "cmd-[": "editor::Outdent",
-      "cmd-]": "editor::Indent",
-      "cmd-alt-up": "editor::AddSelectionAbove",
-      "cmd-ctrl-p": "editor::AddSelectionAbove",
-      "cmd-alt-down": "editor::AddSelectionBelow",
-      "cmd-ctrl-n": "editor::AddSelectionBelow",
-      "cmd-d": [
+      "ctrl-c": "editor::Copy",
+      "ctrl-w": "pane::CloseActiveItem",
+      "alt+up": "editor::MoveUpByLines",
+      "alt+down": "editor::MoveLineDown",
+      //
+      "ctrl-[": "editor::Outdent",
+      "ctrl-]": "editor::Indent",
+      "ctrl-alt-up": "editor::AddSelectionAbove",
+      "ctrl-ctrl-p": "editor::AddSelectionAbove",
+      "ctrl-alt-down": "editor::AddSelectionBelow",
+      "ctrl-ctrl-n": "editor::AddSelectionBelow",
+      "ctrl-d": [
         "editor::SelectNext",
         {
           "replace_newest": false
@@ -61,24 +66,60 @@
           "replace_newest": false
         }
       ],
-      "cmd-k cmd-d": [
+      "ctrl-k ctrl-d": [
         "editor::SelectNext",
         {
           "replace_newest": true
         }
       ],
-      "cmd-k ctrl-cmd-d": [
+      "ctrl-k ctrl-ctrl-d": [
         "editor::SelectPrevious",
         {
           "replace_newest": true
         }
       ],
-      "cmd-/": [
+      "ctrl-/": [
         "editor::ToggleComments",
         {
           "advance_downwards": false
         }
       ],
+      // "cmd-[":} "editor::Outdent",
+      // "cmd-]": "editor::Indent",
+      // "cmd-alt-up": "editor::AddSelectionAbove",
+      // "cmd-ctrl-p": "editor::AddSelectionAbove",
+      // "cmd-alt-down": "editor::AddSelectionBelow",
+      // "cmd-ctrl-n": "editor::AddSelectionBelow",
+      // "cmd-d": [
+      //   "editor::SelectNext",
+      //   {
+      //     "replace_newest": false
+      //   }
+      // ],
+      // "ctrl-cmd-d": [
+      //   "editor::SelectPrevious",
+      //   {
+      //     "replace_newest": false
+      //   }
+      // ],
+      // "cmd-k cmd-d": [
+      //   "editor::SelectNext",
+      //   {
+      //     "replace_newest": true
+      //   }
+      // ],
+      // "cmd-k ctrl-cmd-d": [
+      //   "editor::SelectPrevious",
+      //   {
+      //     "replace_newest": true
+      //   }
+      // ],
+      // "cmd-/": [
+      //   "editor::ToggleComments",
+      //   {
+      //     "advance_downwards": false
+      //   }
+      // ],
       "alt-up": "editor::SelectLargerSyntaxNode",
       "alt-down": "editor::SelectSmallerSyntaxNode",
       "cmd-u": "editor::UndoSelection",
@@ -99,12 +140,11 @@
       // "alt-cmd-r": "editor::RevealInFinder"
     }
   },
-  
   {
     "context": "Workspace",
     "bindings": {
-    "ctrl-alt-b": "workspace::ToggleLeftDock",
-    "ctrl-b": "workspace::ToggleRightDock"
+      "ctrl-alt-b": "workspace::ToggleLeftDock",
+      "ctrl-b": "workspace::ToggleRightDock"
     }
   }
 ]
