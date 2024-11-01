@@ -44,6 +44,7 @@
     "context": "Editor",
     "bindings": {
       "ctrl-c": "editor::Copy",
+      "ctrl-x": "editor::Cut",
       "ctrl-w": "pane::CloseActiveItem",
       "alt+up": "editor::MoveUpByLines",
       "alt+down": "editor::MoveLineDown",

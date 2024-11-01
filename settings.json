@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  // "buffer_font_family": "Zed Plex Mono",
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "gpt-4o"
+    },
+    "version": "2"
+  },
   "project_panel": {
     "dock": "right"
   },
@@ -23,7 +31,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Mocha - No Italics"
+    "dark": "Catppuccin Mocha"
   },
   "line_numbers": true,
   "relative_line_numbers": true,
