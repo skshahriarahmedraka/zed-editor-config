@@ -111,5 +111,12 @@
         ]
       }
     }
+  },
+  "git": {
+    "inline_blame": {
+      "enabled": true
+    }
+    // "git_gutter" : "tracked_files",
+    // "gutter_debounce": 1000
   }
 }

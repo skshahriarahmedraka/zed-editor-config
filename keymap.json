@@ -45,9 +45,15 @@
     "bindings": {
       "ctrl-c": "editor::Copy",
       "ctrl-x": "editor::Cut",
+      "ctrl-v": "editor::Paste",
       "ctrl-w": "pane::CloseActiveItem",
-      "alt+up": "editor::MoveUpByLines",
-      "alt+down": "editor::MoveLineDown",
+      // "alt+up": "editor::MoveUpByLines",
+      // "alt+down": "editor::MoveLineDown",
+      "alt-up": "editor::MoveLineUp",
+      "alt-down": "editor::MoveLineDown",
+      // "alt-shift-down": "editor::DuplicateLine",
+      // "ctrl-d": "editor::DuplicateLine",
+      "ctrl-shift-k": "editor::DeleteLine",
       //
       "ctrl-[": "editor::Outdent",
       "ctrl-]": "editor::Indent",
@@ -85,9 +91,8 @@
           "advance_downwards": false
         }
       ],
-
-      "alt-up": "editor::SelectLargerSyntaxNode",
-      "alt-down": "editor::SelectSmallerSyntaxNode",
+      // "alt-up": "editor::SelectLargerSyntaxNode",
+      // "alt-down": "editor::SelectSmallerSyntaxNode",
       "cmd-u": "editor::UndoSelection",
       "cmd-shift-u": "editor::RedoSelection",
       "f8": "editor::GoToDiagnostic",
