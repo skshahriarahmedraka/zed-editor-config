@@ -17,7 +17,9 @@
       "space o": "tab_switcher::Toggle",
       "space e": "workspace::ToggleLeftDock",
       "space p": "outline::Toggle",
-      "space v": "editor::GoToDefinitionSplit"
+      "space v": "editor::GoToDefinitionSplit",
+      // "dd": "delete",
+      // "_dd": "custom::DeleteLine",
     }
   },
   {
@@ -115,7 +117,13 @@
     "context": "Workspace",
     "bindings": {
       "ctrl-alt-b": "workspace::ToggleLeftDock",
-      "ctrl-b": "workspace::ToggleRightDock"
+      "ctrl-b": "workspace::ToggleRightDock",
+      "ctrl-p": "file_finder::Toggle"
+    }
+  },
+  {
+    "bindings": {
+      "ctrl-p": "file_finder::Toggle"
     }
   }
 ]
