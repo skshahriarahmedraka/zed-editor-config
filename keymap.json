@@ -18,6 +18,13 @@
       "space e": "workspace::ToggleLeftDock",
       "space p": "outline::Toggle",
       "space v": "editor::GoToDefinitionSplit",
+      "space g g": [
+        "task::Spawn",
+        {
+          "task_name": "lazygit",
+          "target": "center"
+        }
+      ]
       // "dd": "delete",
       // "_dd": "custom::DeleteLine",
     }
