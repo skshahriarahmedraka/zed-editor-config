@@ -34,7 +34,7 @@
     "dark": "Catppuccin Mocha"
   },
   "line_numbers": true,
-  "relative_line_numbers": true,
+  "relative_line_numbers": false,
   "cursor_blink": false,
   "scrollbar": {
     "show": "always"
