@@ -55,6 +55,23 @@
       "code_actions_on_format": {
         "source.fixAll.eslint": true
       }
+    },
+    "Zig": {
+      // Formatting with ZLS matches `zig fmt`.
+      // The Zig FAQ answers some questions about `zig fmt`:
+      // https://github.com/ziglang/zig/wiki/FAQ
+      "format_on_save": "language_server",
+      // Make sure that zls is the primary language server
+      "language_servers": [
+        "zls",
+        "..."
+      ],
+      "code_actions_on_format": {
+        // Run code actions that currently supports adding and removing discards.
+        // "source.fixAll": true,
+        // Run code actions that sorts @import declarations.
+        // "source.organizeImports": true,
+      }
     }
   },
   "lsp": {
@@ -109,6 +126,27 @@
             "severity": "warn"
           }
         ]
+      }
+    },
+    "zls": {
+      "binary": {
+        // omit the following line if `zls` is in your PATH
+        "path": "~/zls/zig-out/bin/zls"
+      },
+      // There are two ways to set config options:
+      //   - edit your `zls.json` that applies to any editor that uses ZLS
+      //   - set in-editor config options with the `initialization_options` field below.
+      //
+      // Further information on how to configure ZLS:
+      // https://zigtools.org/zls/configure/
+      "initialization_options": {
+        // Whether to enable build-on-save diagnostics
+        //
+        // Further information about build-on save:
+        // https://zigtools.org/zls/guides/build-on-save/
+        "enable_build_on_save": true,
+        // omit the following line if `zig` is in your PATH
+        "zig_exe_path": "~/zls/zig-out/bin/zls"
       }
     }
   },
