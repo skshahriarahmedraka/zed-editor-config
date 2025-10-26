@@ -9,14 +9,14 @@
 {
   "edit_predictions": {
     "disabled_globs": [],
-    "mode": "eager",
+    "mode": "subtle",
     "copilot": {
       "proxy": null,
       "proxy_no_verify": null
     },
-    "enabled_in_text_threads": true
+    "enabled_in_assistant": true
   },
-  "agent": {
+  "assistant": {
     "default_model": {
       "provider": "copilot_chat",
       "model": "gpt-4.1"
